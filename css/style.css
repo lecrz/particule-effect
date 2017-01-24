@@ -1,0 +1,160 @@
+/* ---- reset ---- */
+
+body {
+  margin: auto 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+
+  position: absolute;
+  vertical-align: bottom;
+  overflow-y: hidden;
+}
+
+.div-centro {
+width:1000px;
+height:592px;
+margin:0 auto;
+}
+
+.div-centro-coming
+{
+position: absolute;
+display:block;
+color:#FFF;
+height:530px;
+margin:0 auto;
+z-index:1;
+
+}
+
+.div-centro-coming-texto {
+
+display: block;
+position:relative;
+top:50%;
+transform:translateY(-50%);
+text-align:center;
+font-size:80px;
+line-height:90px;
+font-family:Montserrat;
+text-transform:uppercase;
+text-shadow:2px 2px 4px #000;
+padding-left:200px;
+
+z-index:0;
+}
+
+
+.div-centro:hover .div-centro-coming-texto {
+display: none;
+}
+
+.div-centro:hover .div-centro-content {
+background:#EB516E;
+opacity:.7;
+display:block;
+top:100px;
+}
+
+
+.div-centro-content {
+display:none;
+color:#FFF;
+height:530px;
+margin:0 auto;
+z-index:1;
+}
+
+.div-centro-texto-g {
+
+position:relative;
+top:50%;
+transform:translateY(-50%);
+text-align:center;
+font-size:80px;
+line-height:90px;
+font-family:Montserrat;
+text-transform:uppercase;
+text-shadow:2px 2px 4px #000;
+padding-top:60px;
+padding-bottom:60px;
+z-index:0;
+}
+
+.div-centro-texto-s {
+text-shadow:none;
+font-size:24px;
+line-height:43px;
+font-family:Open Sans;
+font-weight:300;
+}
+
+.div-container {
+top:205px;
+width:100%;
+float:left;
+position:relative;
+min-height:1px;
+
+display:block;
+}
+
+.tv {
+    display:none;
+}
+
+
+
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
